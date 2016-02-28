@@ -81,19 +81,41 @@ hr {
     text-align: right;
 }
 
-/*.title{
-    font-weight: 600;
-    line-height: 60px;
+.zeit {
+    font-weight: 400 !important;
 }
 
-.zeit{
-    line-height: 70px;
-}*/
+#counter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#countdown {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 230px;
+    border: 1px solid #01215c; 
+    border-radius: 8px;
+    background-color: #e3e3e3;
+    font-weight: 600;
+}
+
+.down {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
 .down .glyphicon{
     color: #01215c;
     font-size: 20px;
-    margin-bottom: 20px;
 }
 
 /*CONTENT*/
@@ -102,12 +124,80 @@ hr {
     width: 80%;
 }
 
+.abstandoben{
+    padding-top: 100px;
+}
+
+h3, h4{
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.textderbauball {
+    padding-right: 30px;
+}
+
+.spenden {
+    border-left: 1px solid #01215c;
+    padding-left: 30px;
+}
+
+.fett {
+    font-weight: 600;
+    padding-right: 5px;
+}
+
+.maps {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 500px;
+}
+
+.platzhalter{
+    margin-top: 100px;
+    height: 300px;
+    background-color: #e6e6e6;
+}
+
+/*animation slide in*/
+.slideanim {visibility:hidden;}
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    visibility: visible; 
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
 /*gallery*/
 
 .rg-image-wrapper{
 	position:relative;
 	padding:20px 30px;
-	background:transparent url(../images/black.png) repeat top left;
+	background-color: #e3e3e3;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
