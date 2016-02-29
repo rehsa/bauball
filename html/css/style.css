@@ -193,15 +193,12 @@ h3, h4{
 }
 
 /*gallery*/
-
 .rg-image-wrapper{
 	position:relative;
-	padding:20px 30px;
-	background-color: #e3e3e3;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+	padding:10px 40px;
+	/*background-color: #e3e3e3;*/
 	min-height:20px;
+    border: 1px solid #01215c;
 }
 .rg-image{
 	position:relative;
@@ -217,12 +214,12 @@ h3, h4{
 	position:absolute;
 	top:0px;
 	left:0px;
-	background:#000 url(../images/nav.png) no-repeat -20% 50%;
+	background:url(../img/pfeile_g.png) no-repeat -20% 50%;
 	width:28px;
 	height:100%;
 	text-indent:-9000px;
 	cursor:pointer;
-	opacity:0.3;
+	opacity:1;
 	outline:none;
 	-moz-border-radius: 10px 0px 0px 10px;
 	-webkit-border-radius: 10px 0px 0px 10px;
@@ -239,19 +236,7 @@ h3, h4{
 .rg-image-nav a:hover{
 	opacity:0.8;
 }
-.rg-caption {
-	text-align:center;
-	margin-top:15px;
-	position:relative;
-}
-.rg-caption p{
-	font-size:11px;
-	letter-spacing:2px;
-	font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
-	line-height:16px;
-	padding:0 15px;
-	text-transform:uppercase;
-}
+
 .rg-loading{
 	width:46px;
 	height:46px;
@@ -324,6 +309,10 @@ footer .glyphicon {
     .zeit{
         font-size: 170%;
     }
+    
+    .rg-image{
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -344,5 +333,33 @@ footer .glyphicon {
     
     .zeit{
         font-size: 130%;
+    }
+    
+    .abstandoben{
+        padding-top: 60px;
+    }
+    
+    .textderbauball{
+        padding: 0;
+    }
+    
+    .spenden{
+        border-left: none;
+        border-top: 1px solid #01215c;
+        border: 1px solid #01215c;
+        border-bottom: 1px solid #01215c;
+        margin: 70px 0;
+        padding: 40px;
+    }
+    
+    .maps{
+        height: 300px;
+        width: 100%;
+    }
+    
+    .angrillen {
+        border-top: 1px solid #01215c;
+        margin: 50px 30px 0 30px;
+        padding: 40px 40px 0 40px;
     }
 }
