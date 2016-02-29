@@ -32,6 +32,7 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700' rel='stylesheet' type='text/css'>
     <!-- SMOOTH SCROLLING -->
     <script type="text/javascript">
+        /*countdown*/
         jQuery(document).ready(function($){ 
             $(".navbar a, footer a[href='#myPage'], div.down a[href='#ersterteil']").on('click', function(event) {
                 event.preventDefault();
@@ -46,8 +47,21 @@
           $('#countdown').countdown('2016/06/09 20:00:00', function(event) {
                 $(this).html(event.strftime('%-D TAG%!D:E; &bull; %H:%M:%S'));
           });
+            
+         /* img fullscreen*/
+            $('#fullscreen').css('height', $(document).outerWidth() + 'px');
+            $('.myImg').click(function(){
+                 var src = $(this).attr('src');
+                  $('#fullscreen img').attr('src', src);
+                  $('#fullscreen').fadeIn();
+            });
+            $('#fullscreen').click(function(){
+                 $(this).fadeOut();
+            });
         });
     </script> 
+    
+    <!--Gallerie-->
     <noscript>
 			<style>
 				.es-carousel ul{
@@ -117,7 +131,7 @@
     </div>
     
     <div id ="ersterteil" class="container">
-        <div class="abstandoben">
+        <div class="abstandoben row">
             <div class="textderbauball col-md-8 col-sm-6 col-xs-12">
                 <h3>WAS IST DER BAUBALL?</h3>
                 <p>Der Bauball ist das Bergfest des Bauingenieurstudenten an der TU Dresden. Er wird jedes Jahr im Sommer veranstaltet, die Organisation liegt komplett in den Händen der Studenten.</p>
@@ -142,7 +156,8 @@
             <div class="platzhalter slideanim abstandoben col-md-6"></div>
             <div class="sometext abstandoben col-md-6">
                 <h3 class="fett">DAS TEAM</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate elei</p>
+                <p>Wir, das Bauballteam 2016, haben uns Anfang des 5. Semesters zusammengefunden, um das alljährliche Bergfest der Fakultät Bauingenieurwesen, den " Bauball ", vorzubereiten.
+Zu unseren Arbeiten gehört dabei nicht nur die Organisation und Planung dieses besonderen Abends, sondern auch die Unterstützung eines sozialen Projekts. Finanziert wird das Ganze über Verkäufe (Semesterangrillen, Kuchenbasar, ...), sowie kleinere und größere Sponsoren.</p>
             </div>
         </div>
         <div class="angrillen abstandoben col-md-12">
@@ -150,9 +165,9 @@
             <p>Im Vorfeld des Bauballs grillen wir sowohl das Winter- als auch das Sommersemester an. <br>Nachfolgend ein paar Impressionen der Veranstaltungen:</p>
         </div>
         </div>
-        <div class="container abstandoben">
+        <div class="container slideanim">
             <div class="content">
-                <div id="rg-gallery" class="rg-gallery">
+                <div class="rg-galleryid" class="rg-gallery">
 					<div class="rg-thumbs">
 						<!-- Elastislide Carousel Thumbnail Viewer -->
 						<div class="es-carousel-wrapper">
@@ -195,8 +210,67 @@
             </div>
         </div>
     <div id="sozialesprojekt" class="container">
+        <div class="row abstandoben">
+            <div class="col-md-6 text-right">
+                <h1>SOZIALES PROJEKT</h1>
+                <p>klick auf das Bild um mehr herauszufinden</p>
+            </div>
+            <div class="col-md-6">
+                <div id="mainImages">
+                    <img src="img/151210_WohnprojektTU.png" alt="" class="myImg img-responsive" />
+                </div>
+                <div id="fullscreen">
+                    <img src="" alt="" class="img-responsive"/>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="galerie" class="container">
+    <div id="galerie" class="container abstandoben">
+        <h1>DAS WAR DER BAUBALL</h1>
+        <div class="slideanim">
+            <div class="content">
+                <div class="rg-galleryid" class="rg-gallery">
+					<div class="rg-thumbs">
+						<!-- Elastislide Carousel Thumbnail Viewer -->
+						<div class="es-carousel-wrapper">
+							<div class="es-nav">
+								<span class="es-nav-prev">Previous</span>
+								<span class="es-nav-next">Next</span>
+							</div>
+							<div class="es-carousel">
+								<ul>
+									<li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/1.jpg" alt="image01"/></a></li>
+									<li><a href="#"><img src="images/thumbs/2.jpg" data-large="images/2.jpg" alt="image02"/></a></li>
+									<li><a href="#"><img src="images/thumbs/3.jpg" data-large="images/3.jpg" alt="image03"/></a></li>
+									<li><a href="#"><img src="images/thumbs/4.jpg" data-large="images/4.jpg" alt="image04"/></a></li>
+									<li><a href="#"><img src="images/thumbs/5.jpg" data-large="images/5.jpg" alt="image05"/></a></li>
+									<li><a href="#"><img src="images/thumbs/6.jpg" data-large="images/6.jpg" alt="image06"/></a></li>
+									<li><a href="#"><img src="images/thumbs/7.jpg" data-large="images/7.jpg" alt="image07"/></a></li>
+									<li><a href="#"><img src="images/thumbs/8.jpg" data-large="images/8.jpg" alt="image08"/></a></li>
+									<li><a href="#"><img src="images/thumbs/9.jpg" data-large="images/9.jpg" alt="image09"/></a></li>
+									<li><a href="#"><img src="images/thumbs/10.jpg" data-large="images/10.jpg" alt="image10"/></a></li>
+									<li><a href="#"><img src="images/thumbs/11.jpg" data-large="images/11.jpg" alt="image11"/></a></li>
+									<li><a href="#"><img src="images/thumbs/12.jpg" data-large="images/12.jpg" alt="image12"/></a></li>
+									<li><a href="#"><img src="images/thumbs/13.jpg" data-large="images/13.jpg" alt="image13"/></a></li>
+									<li><a href="#"><img src="images/thumbs/14.jpg" data-large="images/14.jpg" alt="image14"/></a></li>
+									<li><a href="#"><img src="images/thumbs/15.jpg" data-large="images/15.jpg" alt="image15"/></a></li>
+									<li><a href="#"><img src="images/thumbs/16.jpg" data-large="images/16.jpg" alt="image16"/></a></li>
+									<li><a href="#"><img src="images/thumbs/17.jpg" data-large="images/17.jpg" alt="image17"/></a></li>
+									<li><a href="#"><img src="images/thumbs/18.jpg" data-large="images/18.jpg" alt="image18"/></a></li>
+									<li><a href="#"><img src="images/thumbs/19.jpg" data-large="images/19.jpg" alt="image19"/></a></li>
+									<li><a href="#"><img src="images/thumbs/20.jpg" data-large="images/20.jpg" alt="image20"/></a></li>
+									<li><a href="#"><img src="images/thumbs/21.jpg" data-large="images/21.jpg" alt="image21"/></a></li>
+									<li><a href="#"><img src="images/thumbs/22.jpg" data-large="images/22.jpg" alt="image22"/></a></li>
+									<li><a href="#"><img src="images/thumbs/23.jpg" data-large="images/23.jpg" alt="image23"/></a></li>
+									<li><a href="#"><img src="images/thumbs/24.jpg" data-large="images/24.jpg" alt="image24"/></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- End Elastislide Carousel Thumbnail Viewer -->
+					</div><!-- rg-thumbs -->
+				</div><!-- rg-gallery -->
+            </div>
+        </div>
     </div>
     <div id="sponsoren" class="container">
     </div>

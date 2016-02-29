@@ -48,7 +48,7 @@ $(function() {
 	};
 
 	// gallery container
-	var $rgGallery			= $('#rg-gallery'),
+	var $rgGallery			= $('.rg-galleryid'),
 	// carousel container
 	$esCarousel			= $rgGallery.find('div.es-carousel-wrapper'),
 	// the carousel items
