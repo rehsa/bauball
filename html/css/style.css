@@ -5,14 +5,24 @@ html, body {
     width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     color: #01215c;
-    background-color: #f8f8f8;
+    background-color: white;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding: 0 10%;
 }
 
 /*NAVIGATION*/
 
 .navbar {
     margin-bottom: 0;
-    background-color: #f8f8f8;
+    background-color: #f6f6f6;
     z-index: 8000;
     border: 0;
     font-size: 14px !important;
@@ -27,7 +37,7 @@ html, body {
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #0051e5 !important;
-    background-color: #f8f8f8 !important;
+    background-color: #fff !important;
 }
 
 .navbar-default .navbar-toggle {
@@ -35,7 +45,7 @@ html, body {
     color: #01215c !important;
 }
 
-hr {
+.hrnav {
     position: fixed;
     height: 1px;
     background-color: #01215c;
@@ -77,7 +87,7 @@ hr {
 }
 
 .jumbotron{
-    background-color: #f8f8f8;
+    background-color: #f6f6f6;
     text-align: right;
 }
 
@@ -119,18 +129,23 @@ hr {
 }
 
 /*CONTENT*/
-
-.container {
-    width: 80%;
-}
-
 .abstandoben{
-    padding-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 h3, h4{
     font-weight: 600;
     padding-bottom: 20px;
+}
+
+hr{
+    height: 1px;
+    background-color: #01215c;
+    width: 90%;
+    left: 15%;
+    right: 15%;
+    margin: 30px;
 }
 
 .textderbauball {
@@ -156,7 +171,7 @@ h3, h4{
 }
 
 .platzhalter{
-    margin-top: 100px;
+    margin: 100px 0;
     height: 300px;
     background-color: #e6e6e6;
 }
@@ -192,6 +207,10 @@ h3, h4{
     }
 }
 
+.angrillen{
+    margin-top: -40px;
+}
+
 /*gallery*/
 .rg-galleryid{
     margin-top: 50px;
@@ -200,7 +219,6 @@ h3, h4{
 .rg-image-wrapper{
 	position:relative;
 	padding:10px 40px;
-	/*background-color: #e3e3e3;*/
 	min-height:20px;
     border: 1px solid #01215c;
 }
@@ -257,6 +275,10 @@ h3, h4{
 }
 
 /*soziales projekt*/
+.titlesp{
+    text-align: right;
+}
+
 #mainImages {
     width: 100%;
     height: 300px;
@@ -285,9 +307,12 @@ h3, h4{
 }
 
 /*up-arrow*/
+footer {
+    padding-bottom: 0px !important;
+}
 footer .glyphicon {
     font-size: 20px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     color: #01215c;
 }
 
@@ -338,6 +363,16 @@ footer .glyphicon {
     .rg-image{
         height: auto;
     }
+    #mainImages {
+        margin-top: 20px;
+    }    
+    #mainImages img{
+        display: block;
+        margin: 0 auto;
+    }
+    .titlesp{
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -362,7 +397,7 @@ footer .glyphicon {
         width: 180px;
     }
     .abstandoben{
-        padding-top: 60px;
+        padding-top: 30px;
     }
     .textderbauball{
         padding: 0;
